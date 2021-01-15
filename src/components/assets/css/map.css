@@ -1,0 +1,30 @@
+#player-map{
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    width: 500px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.room{
+    box-sizing: border-box;
+    background-color: red;
+    width: 45%;
+    margin: 10px;
+    height: 100px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+#player-map p{
+    width: 100%;
+}
+
+.current-pos{
+    background-color: blue;
+}
+
+.your-pos{
+    color: white;
+}

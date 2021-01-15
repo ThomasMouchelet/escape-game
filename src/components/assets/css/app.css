@@ -1,0 +1,117 @@
+#root{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#root-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pitch, .room-manager{
+  width: 50%;
+  max-width: 500px;
+}
+
+.pitch p{
+  width: 100%;
+  max-width: 400px;
+  color: white;
+  text-align: justify;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+html{
+  height: 100%;
+}
+
+body{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #070E34;
+    margin: 0;
+}
+
+.content{
+  height:100%;
+}
+ #loader{
+  background-color: #070E34;
+  width: 100%;
+  height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   transition: all 0.7s ease-in-out;
+ }
+
+ .waiting-message{
+   color: white !important;
+   font-size: 2em;
+ }
+
+ .room-id{
+   color: rgba(255, 255, 255, 0.5);
+ }
+
+ .room-id span{
+   color: white
+ }
+
+ .loader-text{
+   color: white;
+   font-size: 2em;
+   margin: 0;
+ }
+
+ .lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    background: #fff;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  }
+  .lds-facebook div:nth-child(1) {
+    left: 8px;
+    animation-delay: -0.24s;
+  }
+  .lds-facebook div:nth-child(2) {
+    left: 32px;
+    animation-delay: -0.12s;
+  }
+  .lds-facebook div:nth-child(3) {
+    left: 56px;
+    animation-delay: 0;
+  }
+  @keyframes lds-facebook {
+    0% {
+      top: 8px;
+      height: 64px;
+    }
+    50%, 100% {
+      top: 24px;
+      height: 32px;
+    }
+  }
